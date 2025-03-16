@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Me</title>
+
+	<style>
+		.contact-section {
+         display: flex;
+         justify-content: space-between; 
+         align-items: flex-start; 
+         max-width: 900px;
+         margin: 70px auto;
+         margin top: 30px; 
+         position: relative;
+     }
+		.contact-container{
+			 border:5px;
+			 margin:0px;
+			 padding:45px;
+			 max-width: 470px;
+			 max-height: 400px;
+             margin-left:120px;
+             background-color:hotpink;
+             align-content: center;
+             border-radius: 15px;
+             width: 50%;
+             position: relative;
+             z-index: 1;
+
+		}
+		input{
+			padding: 7px;
+			border: none;
+
+
+		}
+		textarea{
+			border-radius: 7px;
+			border: none;
+		}
+		.heading{
+			margin:90px;
+			margin-left:105px;
+		}
+		button{
+			background-color:deeppink;
+			padding:3px;
+			cursor: pointer;
+			padding: 9px;
+			border-radius: 15px;
+
+		}
+		button:hover {
+			background-color: hotpink;
+		}
+		h1{
+			font-family: 'Dancing Script', cursive;
+			text-align: center;
+			animation: bounce 1.5s infinite ease-in-out;
+
+		}
+		@keyframes bounce {
+        0%, 100% {
+        transform: translateY(0); /* Normal position */
+        }
+        50% {
+        transform: translateY(-15px); /* Moves up */
+        }
+        }
+		body{
+			background-color: palegoldenrod;
+			font-size: 20px;
+		}
+		
+		
+		input, textarea {
+			width: 90%; 
+			padding: 10px;
+			margin: 5px 0;
+			border-radius: 5px;
+			border: none;
+			font-size: 16px;
+			text-align: center; 
+		}
+		.paragraph{
+        width: 45%;
+        background-color:lightblue;
+        padding: 45px;
+        color: white;
+        font-size: 18px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        white-space: nowrap;
+        height: 110%; 
+        position: relative;
+        margin-top:-20px;
+        min-height: 350px;
+        position: relative;
+        z-index: 2;
+        line-height: 45px;
+       }
+       p{
+       	font-size: 30px;
+       	color: rebeccapurple;
+
+
+       }
+       li{
+       	color: royalblue;
+       }
+       li{
+	list-style-type:none;
+	padding:0;
+	display:flex;
+	text color:white;
+    }
+
+	.ul{
+	list-style-type:none;
+	padding:0;
+	display:flex;
+	text color:white;
+
+}
+.line{
+	margin:10px;
+	padding-inline:27px;
+	justify-content:space-between;
+	text color:white;
+	word-spacing:5px;
+}
+nav{
+display:inline-block;
+border-radius:50px;
+padding:0px;
+display:flex;
+font-size:25px;
+float:center;
+justify-content:center;
+align-items:center;
+border:20px;
+width:880px;
+}
+a{
+	text-decoration: none;
+	padding-inline: 5px;
+	color:whitesmoke;
+    word-spacing:5px;
+}
+a:hover{
+background:white;
+color:hotpink;
+padding:5px;
+border-radius:10px;
+}	
+
+
+
+
+	</style>
+</head>
+<body>
+
+	
+
+	<!-- PAGE HEADING -->
+	<div class="heading">
+		<h1>Get in Touch with Me</h1>
+	</div>
+
+	<!-- CONTACT SECTION -->
+	<div class="contact-section">
+		<div class="contact-container">
+			<form>
+				<input type="text" name="full_name" placeholder="Your Full Name" required><br><br>
+				<input type="email" name="email" placeholder="Your E-mail" required><br><br>
+				<textarea id="message" name="message" rows="4" placeholder="Write message here..." required></textarea><br><br>
+				<button type="submit">Submit →</button>
+			</form>
+		</div>
+
+		<!-- CONTACT INFO -->
+		<div class="paragraph">
+			<p>Contact Information</p>
+			<ul>
+				<li>📞 +977 1 123 4567</li>
+				<li>✉️ <a href="mailto:henaamatya802@gmail.com">info@henaamatya802@gmail.com</a></li>
+				<li>📍 Balaju Height, Kathmandu</li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
